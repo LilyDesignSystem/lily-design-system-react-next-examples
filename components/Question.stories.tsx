@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import QrCode from './QrCode';
+import Question from './Question';
 
 const meta = {
-  title: 'Examples/QrCode',
-  component: QrCode,
+  title: 'Examples/Question',
+  component: Question,
   tags: ['autodocs']
-} satisfies Meta<typeof QrCode>;
+} satisfies Meta<typeof Question>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
