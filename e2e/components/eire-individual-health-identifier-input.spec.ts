@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-const slug = 'northern-ireland-health-and-care-number-input';
-const name = 'NorthernIrelandHealthAndCareNumberInput';
+const slug = 'eire-individual-health-identifier-input';
+const name = 'EireIndividualHealthIdentifierInput';
 
 test.describe('component page: ' + slug, () => {
   test.beforeEach(async ({ page }) => {
@@ -16,7 +16,7 @@ test.describe('component page: ' + slug, () => {
 
   test('renders the H1 with the component name', async ({ page }) => {
     await expect(
-      page.getByRole('heading', { level: 1, name: new RegExp('^NorthernIrelandHealthAndCareNumberInput$') })
+      page.getByRole('heading', { level: 1, name: new RegExp('^EireIndividualHealthIdentifierInput$') })
     ).toBeVisible();
   });
 
